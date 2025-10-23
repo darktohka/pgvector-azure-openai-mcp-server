@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pgvector-azure-openai-mcp-server"
-version = "1.0.1"
+version = "1.0.2"
 description = "A MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL."
 authors = [{name = "Derzsi Dániel", email = "daniel@tohka.us"}]
 license = {text = "MIT"}

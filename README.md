@@ -45,6 +45,14 @@ pip install pgvector-azure-openai-mcp-server
 
 Use `docker-compose.yaml` to set up a database with `pgvector` support.
 
+To install `pgvector` into the database, an `init-db.sql` script must be ran when the PostgreSQL container is first ran. Download this `init-db.sql` script first:
+
+```bash
+wget https://raw.githubusercontent.com/darktohka/pgvector-azure-openai-mcp-server/refs/heads/master/init-db.sql
+```
+
+Then, create the `docker-compose.yaml`:
+
 ```yaml
 services:
   db:
@@ -64,7 +72,7 @@ volumes:
   db_data:
 ```
 
-To create the database:
+To create the database, finally:
 
 ```bash
 docker compose up -d
@@ -72,7 +80,7 @@ docker compose up -d
 
 By default, the `mcp_vectors` Postgres database will be used.
 
-If databases need to be set up manually, use:
+If databases need to be set up manually (not necessary when using `init-db.sql`), use:
 
 ```bash
 # Connect to PostgreSQL and enable the pgvector extension
