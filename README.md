@@ -81,13 +81,13 @@ psql postgres -c "CREATE EXTENSION IF NOT EXISTS vector;"
 
 ### 3. Configure the MCP Client
 
-Add the following configuration to your MCP client configuration file (e.g., Claude Desktop or VS Code):
+Add the following configuration to your MCP client configuration file (e.g., VS Code):
 
 **Recommended Configuration (using uvx, no pre-installation required)**:
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "pgvector-azure-openai-mcp-server": {
       "command": "uvx",
       "args": ["pgvector-azure-openai-mcp-server"],
@@ -107,7 +107,7 @@ Add the following configuration to your MCP client configuration file (e.g., Cla
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "pgvector-azure-openai-mcp-server": {
       "command": "pgvector-azure-openai-mcp-server",
       "env": {
@@ -126,7 +126,7 @@ Add the following configuration to your MCP client configuration file (e.g., Cla
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "pgvector-azure-openai-mcp-server": {
       "command": "python",
       "args": ["-m", "pgvector_azure_openai_mcp_server"],
@@ -141,6 +141,8 @@ Add the following configuration to your MCP client configuration file (e.g., Cla
   }
 }
 ```
+
+Caution: When using Claude Code, the top-level key is called `mcpServers` not `servers`.
 
 ### 4. Verify Installation
 
