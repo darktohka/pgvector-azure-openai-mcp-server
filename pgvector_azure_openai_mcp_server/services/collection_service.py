@@ -192,4 +192,3 @@ class CollectionService:
         self.session.commit()
 
         return True
-        
