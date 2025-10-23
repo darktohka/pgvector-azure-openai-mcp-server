@@ -1,6 +1,6 @@
 # pgvector Azure OpenAI MCP server
 
-A MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL.
+An MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL.
 
 Focuses on Azure OpenAI embeddings.
 

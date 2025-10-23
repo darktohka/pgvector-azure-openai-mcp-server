@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-A MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL.
+An MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL.
 
 Supports collection management, document processing, and vector search operations.
 """
