@@ -512,6 +512,6 @@ DEBUG=false  # Debug mode
 
 - Database connection failed: Check DATABASE_URL format and PostgreSQL service status.
 - pgvector extension not found: Execute `CREATE EXTENSION vector;` in PostgreSQL. Make sure `init-db.sql` is being run.
-- API key error: Verify if AZURE_OPENAI_API_KEY, AZURE_OPENAI_ENDPOINT, and AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME are correctly configured.
+- API key error: Verify if `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `AZURE_OPENAI_MODEL` are correctly configured.
 - Collection renaming failed: Check if the new name already exists.
 - uvx network issues: Ensure network connection is normal, uvx needs to download packages from PyPI.
