@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pgvector-azure-openai-mcp-server"
-version = "1.0.2"
+version = "1.0.3"
 description = "A MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL."
 authors = [{name = "Derzsi Dániel", email = "daniel@tohka.us"}]
 license = {text = "MIT"}
@@ -14,8 +14,8 @@ dependencies = [
     # Core database and vector dependencies
     "sqlalchemy>=2.0.44",
     "psycopg2-binary>=2.9.11",
-    "pgvector>=0.4.0",
-    "python-dotenv>=1.0.0",
+    "pgvector>=0.4.1",
+    "python-dotenv>=1.1.1",
     # Data models and validation
     "pydantic>=2.12.3",
     "pydantic-settings>=2.11.0",
@@ -26,16 +26,16 @@ dependencies = [
     "langchain-azure-ai>=1.0.0",
     "numpy>=2.3.4",
     # Document processing dependencies
-    "pymupdf4llm>=0.0.20",
+    "pymupdf4llm>=0.0.27",
     "pandas>=2.3.3",
-    "chardet>=5.0.0"
+    "chardet>=5.2.0"
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
-    "pytest-mock>=3.15.0",
+    "pytest-mock>=3.15.1",
     "ruff>=0.14.1",
     "mypy>=1.18.2",
 ]

@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
 """
-MCP Server for pgvector Collection Management
+A MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL.
 
-Model Context Protocol server that provides tools for managing PostgreSQL collections
-with pgvector extension. Supports collection management, document processing, and
-vector search operations.
+Supports collection management, document processing, and vector search operations.
 """
 
-import asyncio
 import json
-import os
 import sys
-from typing import Any, Dict, List, Optional, Sequence, Union
+from typing import Any, Dict, Optional
 from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP, Context
-from mcp.types import Resource, Tool
 
 # Ensure cross-platform compatibility
 if sys.platform.startswith("win"):
@@ -28,7 +23,7 @@ from .config import get_settings
 from .database import get_db_session
 from .services import CollectionService, VectorService, DocumentService, EmbeddingService
 from .utils import validate_collection_name, validate_dimension
-from .exceptions import CollectionError, DatabaseError, PgvectorCLIError
+from .exceptions import CollectionError
 
 # Initialize FastMCP server
 mcp = FastMCP("pgvector-azure-openai-mcp-server")

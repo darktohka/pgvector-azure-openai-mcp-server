@@ -31,10 +31,10 @@ class AppProxy:
 
 app = AppProxy()
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = "Derzsi Dániel <daniel@tohka.us>"
 __description__ = (
-    "Model Context Protocol server for RAG using PostgreSQL pgvector and Azure OpenAI embeddings"
+    "A MCP server with RAG capabilities using Azure OpenAI embeddings and pgvector for PostgreSQL."
 )
 
 # Main components available for import

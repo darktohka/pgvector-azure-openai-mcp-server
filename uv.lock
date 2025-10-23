@@ -1692,7 +1692,7 @@ wheels = [
 
 [[package]]
 name = "pgvector-azure-openai-mcp-server"
-version = "1.0.0"
+version = "1.0.3"
 source = { editable = "." }
 dependencies = [
     { name = "chardet" },
@@ -1728,22 +1728,22 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chardet", specifier = ">=5.0.0" },
+    { name = "chardet", specifier = ">=5.2.0" },
     { name = "langchain-azure-ai", specifier = ">=1.0.0" },
     { name = "langchain-text-splitters", specifier = ">=1.0.0" },
     { name = "mcp", specifier = ">=1.18.0" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.18.2" },
     { name = "numpy", specifier = ">=2.3.4" },
     { name = "pandas", specifier = ">=2.3.3" },
-    { name = "pgvector", specifier = ">=0.4.0" },
+    { name = "pgvector", specifier = ">=0.4.1" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
     { name = "pydantic", specifier = ">=2.12.3" },
     { name = "pydantic-settings", specifier = ">=2.11.0" },
-    { name = "pymupdf4llm", specifier = ">=0.0.20" },
+    { name = "pymupdf4llm", specifier = ">=0.0.27" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.4.2" },
     { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=7.0.0" },
-    { name = "pytest-mock", marker = "extra == 'dev'", specifier = ">=3.15.0" },
-    { name = "python-dotenv", specifier = ">=1.0.0" },
+    { name = "pytest-mock", marker = "extra == 'dev'", specifier = ">=3.15.1" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.14.1" },
     { name = "sqlalchemy", specifier = ">=2.0.44" },
 ]
